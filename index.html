@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jokes.com</title>
+    <style>
+        body {
+            font-size: xx-large;
+            font-family: cursive;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            width: 10em;
+            height: 10em;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Q: what is a spyder's favourite thing to do
+        <button id="button1">tell me</button>
+    </p>
+    <p id="answer1">A: spy on people.</p>
+    <p id="answer2">because spy-ing spy-der</p>
+    <script>
+        alert("press the tell me button to see the answer for the joke, come back daily for the joke of the day😊😊😊")
+        document.getElementById("answer1").hidden = true
+        document.getElementById("answer2").hidden = true
+        document.getElementById("button1").hidden = true
+        function showButton() {
+            document.getElementById("button1").hidden = false
+        }
+        setTimeout(showButton, 10000)
+        function showAnswer() {
+            document.getElementById("answer1").hidden = false
+        document.getElementById("answer2").hidden = false
+        }
+        document.getElementById("button1").addEventListener("click", showAnswer)
+        //this is currentley a test and practice website
+    </script>
+</body>
+</html>
