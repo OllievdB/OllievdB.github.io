@@ -2,43 +2,13 @@
 <html>
 <head>
     <title>jokes.com</title>
- <style>
-        body {
-            font-size: xx-large;
-            font-family: cursive;
-        }
-
-        button {
-            background-color: red;
-            color: white;
-            border-radius: 50%;
-            width: 10em;
-            height: 10em;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="style.css">
 
 <body>
-    <p> Q: hi this site is curntly ofline 
+    <p><div id="question"></div>
         <button id="button1">tell me</button>
     </p>
-    <p id="answer1"> A: hi this site is curntly ofline </p>
-    <p id="answer2"</p>
-    <script>
-        alert("hi this site is curntly ofline")
-        document.getElementById("answer1").hidden = true
-        document.getElementById("answer2").hidden = true
-        document.getElementById("button1").hidden = true
-        function showButton() {
-            document.getElementById("button1").hidden = false
-        }
-        setTimeout(showButton, 10000)
-        function showAnswer() {
-            document.getElementById("answer1").hidden = false
-        document.getElementById("answer2").hidden = false
-        }
-        document.getElementById("button1").addEventListener("click", showAnswer)
-        //this is currentley a test and practice website
-    </script>
+    <p id="answer1"></p>
+    <script src="index.js"></script>
 </body>
 </html>
