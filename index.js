@@ -1,6 +1,7 @@
+response = null
 fetch('./jokes.json')
     .then((response) => response.json())
-    .then((json) => document.getElementById("question"));
+console.log(response)
 document.getElementById("answer1").hidden = true
 document.getElementById("button1").hidden = true
 function showButton() {
