@@ -1,6 +1,7 @@
+let repo = null
 async function findJson() {
     const response = await fetch("./jokes.json");
-    var repo = await response.json();
+    repo = await response.json();
 }
   
 console.log(repo)
