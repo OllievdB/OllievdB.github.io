@@ -3,7 +3,7 @@ async function findJson() {
     const response = await fetch("./jokes.json");
     repo = await response.json();
 }
-  
+findJson()
 console.log(repo)
 document.getElementById("answer1").hidden = true
 document.getElementById("button1").hidden = true
