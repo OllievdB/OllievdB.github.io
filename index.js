@@ -1,7 +1,10 @@
-response = null
-fetch('./jokes.json')
-    .then((response) => response.json())
-console.log(response)
+const repo = null
+async function findJson() {
+    const response = await fetch("./jokes.json");
+    repo = await response.json();
+}
+  
+console.log(repo)
 document.getElementById("answer1").hidden = true
 document.getElementById("button1").hidden = true
 function showButton() {
